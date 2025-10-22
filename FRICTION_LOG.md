@@ -843,21 +843,18 @@ class User(Base):
 
 ### 🤖 **AI Performance**
 
-```mermaid
-radar
-    title AI System Performance
-    options
-        scale: 0-100
-    
-    "Learning Plan Generation": 95
-    "Quiz Creation": 92
-    "Candidate Matching": 95
-    "Email Classification": 88
-    "Voice Response": 97
-    "Content Generation": 90
-    "Error Handling": 94
-    "Response Speed": 85
-```
+**AI System Performance (0-100 Scale):**
+
+| AI Feature | Score | Performance |
+|------------|-------|-------------|
+| Voice Response | 97% | ⭐⭐⭐⭐⭐ |
+| Learning Plan Generation | 95% | ⭐⭐⭐⭐⭐ |
+| Candidate Matching | 95% | ⭐⭐⭐⭐⭐ |
+| Error Handling | 94% | ⭐⭐⭐⭐⭐ |
+| Quiz Creation | 92% | ⭐⭐⭐⭐⭐ |
+| Content Generation | 90% | ⭐⭐⭐⭐ |
+| Email Classification | 88% | ⭐⭐⭐⭐ |
+| Response Speed | 85% | ⭐⭐⭐⭐ |
 
 ---
 
