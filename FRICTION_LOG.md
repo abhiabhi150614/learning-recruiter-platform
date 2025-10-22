@@ -180,7 +180,7 @@ xychart-beta
     title "OAuth Success Rate by Service"
     x-axis [LinkedIn, GitHub, Twitter, Gmail, Drive, Calendar, YouTube, Meet]
     y-axis "Success Rate %" 0 --> 100
-    bar [98, 97, 96, 99, 99, 99, 98, 95]
+    bar [78, 97, 96, 100, 100, 100, 100, 100]
 ```
 
 ### 🔄 **Request Flow Distribution**
@@ -189,7 +189,7 @@ xychart-beta
 |----------------|------------------|--------------|-------------------|
 | **🎯 Composio Primary** | 95% (950/1000) | 98.2% | All social media, most Google services |
 | **🛡️ Google Fallback** | 5% (50/1000) | 99.1% | Advanced Google features, rate limit bypass |
-| **⚡ Direct Integration** | N/A | 99.5% | Twilio voice, Gemini AI |
+| **⚡ Direct Integration** | N/A | 99.5% | Twilio voice|
 
 **Observation**: Composio handled 95% of OAuth requests. Google OAuth only used for:
 - Rate limit bypass (rare)
