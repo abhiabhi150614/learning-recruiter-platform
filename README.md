@@ -1,23 +1,24 @@
-# 🎓 EduAI - AI-Powered Learning & Recruitment Platform
+# EduAI - AI-Powered Learning & Recruitment Platform
 
 <div align="center">
 
 ![EduAI Platform](https://img.shields.io/badge/EduAI-Learning%20Platform-blue?style=for-the-badge&logo=graduation-cap)
 ![Hackathon Winner](https://img.shields.io/badge/6%20Day-Hackathon%20Sprint-gold?style=for-the-badge&logo=trophy)
 ![AI Powered](https://img.shields.io/badge/AI-Powered-green?style=for-the-badge&logo=robot)
+![Hybrid OAuth](https://img.shields.io/badge/OAuth-Hybrid%20Architecture-purple?style=for-the-badge&logo=security)
 
-**🚀 Dual-user platform combining AI education with intelligent recruitment**
+**Dual-user platform combining AI education with intelligent recruitment using hybrid OAuth architecture**
 
 </div>
 
 ---
 
-## 📈 Platform Overview
+## Platform Overview
 
 ```mermaid
 graph TB
-    A[EduAI Platform] --> B[👨🎓 Student Portal]
-    A --> C[🏢 Recruiter Portal]
+    A[EduAI Platform] --> B[Student Portal]
+    A --> C[Recruiter Portal]
     
     B --> D[AI Learning Plans]
     B --> E[Interactive Chatbot]
@@ -30,43 +31,43 @@ graph TB
     C --> K[Interview Management]
     C --> L[AI Assistant]
     
-    D --> M[📊 Progress Analytics]
-    E --> N[🤖 Gemini AI]
-    F --> O[📧 Gmail Notifications]
-    G --> P[📞 Twilio Voice]
-    H --> Q[🔗 LinkedIn/GitHub/Twitter]
+    D --> M[Progress Analytics]
+    E --> N[Gemini AI]
+    F --> O[Gmail Notifications]
+    G --> P[Twilio Voice]
+    H --> Q[LinkedIn/GitHub/Twitter]
     
-    I --> R[🎯 AI Scoring]
-    J --> S[📄 Resume Parsing]
-    K --> T[📅 Google Meet]
-    L --> U[💬 Recruitment Insights]
+    I --> R[AI Scoring]
+    J --> S[Resume Parsing]
+    K --> T[Google Meet]
+    L --> U[Recruitment Insights]
 ```
 
-### 🏆 Key Achievements
+### Key Achievements
 
 <table>
 <tr>
-<td align="center"><strong>🔐 Hybrid OAuth</strong><br/>Google + Composio<br/>Individual Services</td>
-<td align="center"><strong>🤖 AI Function Calling</strong><br/>8+ Tool<br/>Integration</td>
-<td align="center"><strong>📱 45+ Components</strong><br/>Comprehensive<br/>UI Library</td>
-<td align="center"><strong>🗄️ 15+ Models</strong><br/>Complex Database<br/>Architecture</td>
+<td align="center"><strong>Hybrid OAuth</strong><br/>Composio Primary + Google Fallback<br/>Individual Services</td>
+<td align="center"><strong>AI Function Calling</strong><br/>8+ Tool<br/>Integration</td>
+<td align="center"><strong>45+ Components</strong><br/>Comprehensive<br/>UI Library</td>
+<td align="center"><strong>15+ Models</strong><br/>Complex Database<br/>Architecture</td>
 </tr>
 <tr>
-<td align="center"><strong>🔌 10+ APIs</strong><br/>Multi-Service<br/>Integration</td>
-<td align="center"><strong>📞 Voice AI</strong><br/>Twilio-Powered<br/>Tutoring</td>
-<td align="center"><strong>⚡ 6-Day Sprint</strong><br/>Rapid Development<br/>Cycle</td>
-<td align="center"><strong>🎯 Dual Architecture</strong><br/>Student + Recruiter<br/>Platforms</td>
+<td align="center"><strong>10+ APIs</strong><br/>Multi-Service<br/>Integration</td>
+<td align="center"><strong>Voice AI</strong><br/>Twilio-Powered<br/>Tutoring</td>
+<td align="center"><strong>6-Day Sprint</strong><br/>Rapid Development<br/>Cycle</td>
+<td align="center"><strong>Dual Architecture</strong><br/>Student + Recruiter<br/>Platforms</td>
 </tr>
 </table>
 
 ---
 
-## 🎯 Core Features
+## Core Features
 
-### 👨🎓 Student Features
+### Student Features
 
 <details>
-<summary><strong>🧠 AI-Powered Learning Plans</strong></summary>
+<summary><strong>AI-Powered Learning Plans</strong></summary>
 
 ```mermaid
 flowchart LR
@@ -82,15 +83,15 @@ flowchart LR
 ```
 
 **Features:**
-- 🎯 **Personalized Paths**: AI-generated curricula based on goals, skills, and availability
-- 📅 **Monthly Structure**: Organized 30-day learning cycles with clear milestones
-- 📊 **Real-time Analytics**: Progress monitoring with detailed performance insights
-- 🔄 **Adaptive Content**: Dynamic content generation based on learning progress
+- **Personalized Paths**: AI-generated curricula based on goals, skills, and availability
+- **Monthly Structure**: Organized 30-day learning cycles with clear milestones
+- **Real-time Analytics**: Progress monitoring with detailed performance insights
+- **Adaptive Content**: Dynamic content generation based on learning progress
 
 </details>
 
 <details>
-<summary><strong>🤖 Interactive AI Chatbot with Function Calling</strong></summary>
+<summary><strong>Interactive AI Chatbot with Function Calling</strong></summary>
 
 ```mermaid
 graph TD
@@ -111,16 +112,16 @@ graph TD
 ```
 
 **Capabilities:**
-- 🧠 **Context Awareness**: Knows current learning position and progress
-- 🛠️ **8+ Tool Integration**: Google Drive, YouTube, Twilio, LinkedIn, GitHub, Twitter
-- ⚡ **Real-time Responses**: Powered by Gemini AI with function calling
-- 📚 **Learning Support**: Specific guidance based on current topics
-- 🔗 **Social Actions**: Create LinkedIn posts, manage GitHub repos
+- **Context Awareness**: Knows current learning position and progress
+- **8+ Tool Integration**: Google Drive, YouTube, Twilio, LinkedIn, GitHub, Twitter
+- **Real-time Responses**: Powered by Gemini AI with function calling
+- **Learning Support**: Specific guidance based on current topics
+- **Social Actions**: Create LinkedIn posts, manage GitHub repos
 
 </details>
 
 <details>
-<summary><strong>📝 Comprehensive Quiz System</strong></summary>
+<summary><strong>Comprehensive Quiz System</strong></summary>
 
 ```mermaid
 sequenceDiagram
@@ -139,15 +140,15 @@ sequenceDiagram
 ```
 
 **Features:**
-- 🎯 **Adaptive Quizzes**: AI-generated based on daily learning content
-- 🚪 **Progress Gating**: Must pass quizzes to unlock next learning day
-- 📊 **Performance Analytics**: Detailed scoring and improvement tracking
-- 📧 **Email Notifications**: Automated quiz result notifications via Gmail
+- **Adaptive Quizzes**: AI-generated based on daily learning content
+- **Progress Gating**: Must pass quizzes to unlock next learning day
+- **Performance Analytics**: Detailed scoring and improvement tracking
+- **Email Notifications**: Automated quiz result notifications via Gmail
 
 </details>
 
 <details>
-<summary><strong>🌐 Google Services Integration (Individual OAuth)</strong></summary>
+<summary><strong>Google Services Integration (Individual OAuth)</strong></summary>
 
 ```mermaid
 graph LR
@@ -158,26 +159,26 @@ graph LR
     B --> F[YouTube API]
     B --> G[Google Meet API]
     
-    C --> H[📧 Notifications]
-    D --> I[📁 Note Storage]
-    E --> J[📅 Scheduling]
-    F --> K[🎥 Video Content]
-    G --> L[📹 Video Calls]
+    C --> H[Notifications]
+    D --> I[Note Storage]
+    E --> J[Scheduling]
+    F --> K[Video Content]
+    G --> L[Video Calls]
 ```
 
 **Note**: Google services are implemented using **individual Composio OAuth connections** rather than unified Google OAuth, providing AI-enhanced operations with consistent API responses.
 
 **Integrations:**
-- 📧 **Gmail**: Automated notifications and communication via Composio
-- 📁 **Google Drive**: Automatic note storage and retrieval via Composio
-- 📅 **Calendar**: Learning schedule and reminder management via Composio
-- 🎥 **YouTube**: Video search, playlist creation, content curation via Composio
-- 📹 **Meet**: Video calling capabilities for tutoring sessions via Composio
+- **Gmail**: Automated notifications and communication via Composio
+- **Google Drive**: Automatic note storage and retrieval via Composio
+- **Calendar**: Learning schedule and reminder management via Composio
+- **YouTube**: Video search, playlist creation, content curation via Composio
+- **Meet**: Video calling capabilities for tutoring sessions via Composio
 
 </details>
 
 <details>
-<summary><strong>🔗 Social Media Integration (Composio OAuth)</strong></summary>
+<summary><strong>Social Media Integration (Composio OAuth)</strong></summary>
 
 ```mermaid
 graph TB
@@ -197,15 +198,15 @@ graph TB
 ```
 
 **Platforms:**
-- 💼 **LinkedIn**: Individual OAuth connection and AI-generated professional posts
-- 🐙 **GitHub**: Individual OAuth connection, repository management and project tracking
-- 🐦 **Twitter**: Individual OAuth connection, profile integration and content sharing
-- 🤖 **AI Content**: Automatic post creation about learning progress
+- **LinkedIn**: Individual OAuth connection and AI-generated professional posts
+- **GitHub**: Individual OAuth connection, repository management and project tracking
+- **Twitter**: Individual OAuth connection, profile integration and content sharing
+- **AI Content**: Automatic post creation about learning progress
 
 </details>
 
 <details>
-<summary><strong>📞 Voice Tutoring System</strong></summary>
+<summary><strong>Voice Tutoring System</strong></summary>
 
 ```mermaid
 sequenceDiagram
@@ -222,17 +223,17 @@ sequenceDiagram
 ```
 
 **Features:**
-- 📞 **Twilio Integration**: Voice calling with AI-powered tutoring
-- 🧠 **Context-Aware**: Voice assistant knows current learning status
-- ⚡ **Real-time Interaction**: Live voice conversations with AI tutor
-- 📊 **Session Tracking**: Call recording and analysis capabilities
+- **Twilio Integration**: Voice calling with AI-powered tutoring
+- **Context-Aware**: Voice assistant knows current learning status
+- **Real-time Interaction**: Live voice conversations with AI tutor
+- **Session Tracking**: Call recording and analysis capabilities
 
 </details>
 
-### 🏢 Recruiter Features
+### Recruiter Features
 
 <details>
-<summary><strong>🎯 AI-Powered Candidate Matching</strong></summary>
+<summary><strong>AI-Powered Candidate Matching</strong></summary>
 
 ```mermaid
 graph TD
@@ -251,15 +252,15 @@ graph TD
 ```
 
 **Capabilities:**
-- 🧠 **Intelligent Matching**: AI analyzes job requirements against student profiles
-- 📊 **Comprehensive Scoring**: Multi-factor algorithm considering skills, goals, performance
-- 💡 **Detailed Explanations**: AI provides reasoning for each match score
-- ⚡ **Bulk Analysis**: Process multiple candidates simultaneously
+- **Intelligent Matching**: AI analyzes job requirements against student profiles
+- **Comprehensive Scoring**: Multi-factor algorithm considering skills, goals, performance
+- **Detailed Explanations**: AI provides reasoning for each match score
+- **Bulk Analysis**: Process multiple candidates simultaneously
 
 </details>
 
 <details>
-<summary><strong>📧 Advanced Email Application Management</strong></summary>
+<summary><strong>Advanced Email Application Management</strong></summary>
 
 ```mermaid
 sequenceDiagram
@@ -277,16 +278,16 @@ sequenceDiagram
 ```
 
 **Features:**
-- 📧 **Gmail Integration**: Automatic job application email fetching with enhanced filtering
-- 🤖 **AI Summarization**: Intelligent email content analysis and candidate profiling
-- 📄 **Resume Processing**: PDF attachment parsing and skill extraction
-- 👤 **Candidate Creation**: Automatic profile creation from email applications
-- 🔍 **Smart Filtering**: Job-related email detection with priority scoring
+- **Gmail Integration**: Automatic job application email fetching with enhanced filtering
+- **AI Summarization**: Intelligent email content analysis and candidate profiling
+- **Resume Processing**: PDF attachment parsing and skill extraction
+- **Candidate Creation**: Automatic profile creation from email applications
+- **Smart Filtering**: Job-related email detection with priority scoring
 
 </details>
 
 <details>
-<summary><strong>📅 Interview Management System</strong></summary>
+<summary><strong>Interview Management System</strong></summary>
 
 ```mermaid
 graph TB
@@ -301,16 +302,16 @@ graph TB
 ```
 
 **System:**
-- 📹 **Google Meet Integration**: Automated interview scheduling with calendar invites
-- ⏰ **Availability Checking**: Real-time calendar availability verification
-- 📋 **Interview Tracking**: Complete interview lifecycle management
-- 📧 **Automated Notifications**: Email confirmations and reminders
-- 🔄 **Reschedule/Cancel**: Full interview management capabilities
+- **Google Meet Integration**: Automated interview scheduling with calendar invites
+- **Availability Checking**: Real-time calendar availability verification
+- **Interview Tracking**: Complete interview lifecycle management
+- **Automated Notifications**: Email confirmations and reminders
+- **Reschedule/Cancel**: Full interview management capabilities
 
 </details>
 
 <details>
-<summary><strong>🤖 Advanced Recruiter AI Assistant</strong></summary>
+<summary><strong>Advanced Recruiter AI Assistant</strong></summary>
 
 ```mermaid
 graph TD
@@ -329,19 +330,56 @@ graph TD
 ```
 
 **Assistant:**
-- 🧠 **Intelligent Chatbot**: AI assistant with access to all candidate data
-- 🔍 **Email Search**: Natural language search through job applications
-- 💡 **Candidate Insights**: AI-powered candidate analysis and recommendations
-- 📈 **Recruitment Strategy**: Data-driven hiring insights and suggestions
-- 📊 **Real-time Analytics**: Access to comprehensive recruitment metrics
+- **Intelligent Chatbot**: AI assistant with access to all candidate data
+- **Email Search**: Natural language search through job applications
+- **Candidate Insights**: AI-powered candidate analysis and recommendations
+- **Recruitment Strategy**: Data-driven hiring insights and suggestions
+- **Real-time Analytics**: Access to comprehensive recruitment metrics
 
 </details>
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
-### 🔄 Application Flow Visualization
+### Hybrid OAuth Architecture
+
+**EduAI implements a innovative hybrid OAuth approach:**
+
+**Primary Layer - Composio OAuth (95% of requests)**
+- LinkedIn, GitHub, Twitter: Individual OAuth connections via Composio
+- Gmail, Drive, Calendar, YouTube: Individual OAuth connections via Composio
+- Consistent API responses across all services
+- Built-in error handling and retry mechanisms
+- AI-enhanced operations with function calling
+
+**Fallback Layer - Google OAuth (5% of requests)**
+- Used only when Composio services are unavailable
+- Advanced Google Meet features not supported by Composio
+- Rate limit bypass for Google services
+- Direct API access for complex operations
+
+**Benefits of Hybrid Approach:**
+- 99%+ service availability through redundancy
+- Consistent developer experience via Composio
+- Advanced features through direct Google OAuth
+- Seamless user experience (users don't know which system is active)
+
+**Implementation Strategy:**
+```python
+# Primary: Composio OAuth
+try:
+    result = composio.tools.execute(
+        "GMAIL_SEND_EMAIL",
+        user_id=sanitized_user_id,
+        arguments=email_data
+    )
+except ComposioError:
+    # Fallback: Google OAuth
+    result = google_gmail_service.send_email(email_data)
+```
+
+### Application Flow Visualization
 
 ```mermaid
 graph TB
@@ -376,7 +414,7 @@ graph TB
     B5 --> C1
 ```
 
-### 🔐 Individual OAuth Architecture (Composio-Based)
+### Individual OAuth Architecture (Composio-Based)
 
 ```mermaid
 graph TB
@@ -423,27 +461,27 @@ graph TB
 
 ---
 
-## 🔧 Technology Stack
+## Technology Stack
 
-### 🎨 Frontend (React 19.1.0)
+### Frontend (React 19.1.0)
 - **45+ Components**: Dashboard, LearningPlans, Chatbot, RecruiterDashboard, etc.
 - **Modern UI**: Styled-components, Framer Motion, React Icons
 - **Routing**: React Router DOM with protected routes
 - **State Management**: React Hooks and Context API
 
-### ⚙️ Backend (FastAPI)
+### Backend (FastAPI)
 - **Core Services**: Gemini AI, Composio OAuth, Twilio integration
 - **Database**: PostgreSQL with SQLAlchemy ORM
 - **Authentication**: JWT tokens with individual OAuth services
 - **API Routes**: Auth, Chatbot, Learning Plans, Quiz, Recruiter
 
-### 🤖 AI Integration
+### AI Integration
 - **Gemini AI**: 2.0 Flash, 1.5 Pro with fallback system
 - **Function Calling**: 8+ integrated tools
 - **Context Awareness**: Real-time learning progress tracking
 - **Content Generation**: Learning materials and quiz creation
 
-### 🔗 External Integrations
+### External Integrations
 - **Google Services**: Gmail, Drive, Calendar, YouTube, Meet (via Composio individual OAuth)
 - **Social Media**: LinkedIn, GitHub, Twitter (via Composio individual OAuth)
 - **Twilio**: Voice calling and SMS
@@ -451,7 +489,7 @@ graph TB
 
 ---
 
-## 📊 Technical Metrics
+## Technical Metrics
 
 <table>
 <tr>
@@ -460,7 +498,7 @@ graph TB
 <th>Value</th>
 </tr>
 <tr>
-<td rowspan="4"><strong>🏗️ Architecture</strong></td>
+<td rowspan="4"><strong>Architecture</strong></td>
 <td>React Components</td>
 <td>45+</td>
 </tr>
@@ -477,7 +515,7 @@ graph TB
 <td>10+</td>
 </tr>
 <tr>
-<td rowspan="3"><strong>🤖 AI Features</strong></td>
+<td rowspan="3"><strong>AI Features</strong></td>
 <td>AI Models</td>
 <td>4 (Fallback)</td>
 </tr>
@@ -490,7 +528,7 @@ graph TB
 <td>Real-time</td>
 </tr>
 <tr>
-<td rowspan="3"><strong>🔗 Integrations</strong></td>
+<td rowspan="3"><strong>Integrations</strong></td>
 <td>Google Services</td>
 <td>5 APIs (Individual OAuth)</td>
 </tr>
@@ -506,9 +544,9 @@ graph TB
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-### 📋 Prerequisites
+### Prerequisites
 ```bash
 # Required Software
 - Python 3.8+
@@ -522,7 +560,7 @@ graph TB
 - Twilio Account (optional)
 ```
 
-### ⚡ Installation
+### Installation
 
 **Backend Setup:**
 ```bash
@@ -541,7 +579,7 @@ npm install
 npm start
 ```
 
-### 🔑 Environment Variables
+### Environment Variables
 ```env
 # Database
 DATABASE_URL=postgresql://user:pass@localhost:5432/eduaidb
@@ -557,9 +595,9 @@ TWILIO_AUTH_TOKEN=your_twilio_token
 
 ---
 
-## 📚 API Documentation
+## API Documentation
 
-### 🎓 Student APIs
+### Student APIs
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `POST` | `/auth/google/callback` | JWT authentication |
@@ -573,7 +611,7 @@ TWILIO_AUTH_TOKEN=your_twilio_token
 | `POST` | `/auth/github/connect` | GitHub OAuth via Composio |
 | `POST` | `/auth/twitter/connect` | Twitter OAuth via Composio |
 
-### 🏢 Recruiter APIs
+### Recruiter APIs
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `GET` | `/recruiter/dashboard` | Comprehensive recruiter dashboard |
@@ -587,25 +625,26 @@ TWILIO_AUTH_TOKEN=your_twilio_token
 
 ---
 
-## 🏆 Innovation Highlights
+## Innovation Highlights
 
-### 🔐 Individual OAuth Strategy (Composio-Based)
+### Hybrid OAuth Strategy (Composio + Google)
+**Revolutionary Approach**: Uses Composio as primary OAuth provider with Google OAuth as fallback, providing both consistency and reliability.
 **Revolutionary Approach**: Uses Composio for individual OAuth connections to each service (Gmail, Drive, Calendar, YouTube, Meet, LinkedIn, GitHub, Twitter) rather than unified packages, providing AI-enhanced operations with consistent API responses.
 
-### 🤖 Context-Aware AI Integration
+### Context-Aware AI Integration
 **Advanced Implementation**: AI assistant with deep platform integration, knowing user's exact learning position and providing contextual responses with 8+ tool integrations.
 
-### 📞 Voice-Enabled Learning
+### Voice-Enabled Learning
 **Unique Feature**: AI-powered voice tutoring system with context awareness and real-time conversation capabilities via Twilio integration.
 
-### 📧 Intelligent Email Processing
+### Intelligent Email Processing
 **Advanced Feature**: AI-powered job application email analysis with resume parsing, candidate profiling, and automatic shortlisting capabilities.
 
 ---
 
-## 📄 License & Acknowledgments
+## License & Acknowledgments
 
-### 🙏 Acknowledgments
+### Acknowledgments
 
 <table>
 <tr>
@@ -640,7 +679,7 @@ TWILIO_AUTH_TOKEN=your_twilio_token
 
 ---
 
-## 📸 Platform Screenshots
+## Platform Screenshots
 
 ![Screenshot 1](Images/Screenshot%202025-10-22%20095357.png)
 
@@ -754,7 +793,7 @@ TWILIO_AUTH_TOKEN=your_twilio_token
 
 <div align="center">
 
-## 🎉 Built with ❤️ during a 6-day intensive hackathon sprint
+## Built during a 6-day intensive hackathon sprint
 
 **EduAI represents the future of personalized learning and intelligent recruitment, combining cutting-edge AI with practical educational tools through individual OAuth service integrations.**
 
