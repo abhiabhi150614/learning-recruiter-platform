@@ -1,7 +1,7 @@
 # EduAI Development Friction Log
 ## 6-Day Implementation Notes
 
-**📖 You can also visit this link to view the friction log in good format: https://github.com/abhiabhi150614/learning-recruiter-platform/blob/main/FRICTION_LOG.md
+
 
 **Project**: AI-powered learning platform with dual user architecture  
 **Timeline**: 6 days intensive development  
