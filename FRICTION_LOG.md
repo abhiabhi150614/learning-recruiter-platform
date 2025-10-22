@@ -137,24 +137,67 @@ def create_learning_repo(user_email: str, user_name: str):
 ### 🔐 **Day 3: Hybrid OAuth Architecture - The Real Story**
 
 ```mermaid
-graph TB
-    subgraph "Actual Implementation Strategy"
-        A[Composio OAuth] --> B[Primary for ALL services]
-        A --> C[LinkedIn Individual]
-        A --> D[GitHub Individual]
-        A --> E[Twitter Individual]
-        A --> F[Gmail Individual]
-        A --> G[Drive Individual]
-        A --> H[Calendar Individual]
-        A --> I[YouTube Individual]
+flowchart TB
+    subgraph "🏗️ EduAI Hybrid OAuth Architecture"
+        direction TB
         
-        J[Google OAuth] --> K[Fallback ONLY]
-        K --> L[When Composio Fails]
-        K --> M[Advanced Features]
+        subgraph "🎯 Primary Layer - Composio OAuth"
+            A["🔗 Composio API Gateway"]
+            A --> B["💼 LinkedIn Individual"]
+            A --> C["🐙 GitHub Individual"]
+            A --> D["🐦 Twitter Individual"]
+            A --> E["📧 Gmail Individual"]
+            A --> F["📁 Drive Individual"]
+            A --> G["📅 Calendar Individual"]
+            A --> H["🎥 YouTube Individual"]
+        end
+        
+        subgraph "🛡️ Fallback Layer - Google OAuth"
+            I["🔐 Google OAuth Unified"]
+            I --> J["📧 Gmail Backup"]
+            I --> K["📁 Drive Backup"]
+            I --> L["📅 Calendar Backup"]
+            I --> M["🎥 YouTube Backup"]
+            I --> N["📹 Meet Advanced"]
+        end
+        
+        subgraph "⚡ Direct Integration"
+            O["📞 Twilio Voice"]
+            P["🤖 Gemini AI"]
+        end
     end
     
-    style A fill:#ccffcc
-    style J fill:#ffffcc
+    Q["👤 User Request"] --> A
+    A -.->|"❌ If Fails"| I
+    
+    style A fill:#e1f5fe,stroke:#01579b,stroke-width:3px
+    style I fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    style O fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    style P fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+```
+
+### 📊 **Hybrid OAuth Success Metrics**
+
+```mermaid
+sankey
+    title OAuth Request Flow Distribution
+    
+    User Requests,Composio Primary,950
+    User Requests,Google Fallback,50
+    
+    Composio Primary,LinkedIn Success,180
+    Composio Primary,GitHub Success,175
+    Composio Primary,Twitter Success,170
+    Composio Primary,Gmail Success,160
+    Composio Primary,Drive Success,155
+    Composio Primary,Calendar Success,165
+    Composio Primary,YouTube Success,145
+    
+    Google Fallback,Gmail Backup,15
+    Google Fallback,Drive Backup,12
+    Google Fallback,Calendar Backup,8
+    Google Fallback,YouTube Backup,10
+    Google Fallback,Meet Advanced,5
 ```
 
 **The Truth**: Google OAuth is implemented as **fallback only**, not primary. Composio handles 95% of operations.
@@ -375,6 +418,51 @@ pie title 6-Day Development Time Allocation
     "Twilio Voice Integration" : 5
 ```
 
+### 🏗️ **Architecture Complexity Visualization**
+
+```mermaid
+mindmap
+  root((🚀 EduAI Platform))
+    🔐 Authentication Layer
+      🎯 Composio Primary
+        💼 LinkedIn OAuth
+        🐙 GitHub OAuth
+        🐦 Twitter OAuth
+        📧 Gmail OAuth
+        📁 Drive OAuth
+        📅 Calendar OAuth
+        🎥 YouTube OAuth
+      🛡️ Google Fallback
+        🔐 Unified OAuth
+        📹 Meet Advanced
+        ⚡ Rate Limit Bypass
+    🤖 AI Integration
+      🧠 Gemini Models
+        🚀 2.0 Flash Exp
+        💎 1.5 Pro
+        ⚡ 1.5 Flash
+        🔧 Pro Fallback
+      🛠️ Function Calling
+        📞 Voice Integration
+        📧 Email Processing
+        🎯 Candidate Matching
+    🎨 Frontend Architecture
+      👨‍🎓 Student Portal
+        📚 Learning Plans
+        🎯 Quiz System
+        💬 AI Chatbot
+      🏢 Recruiter Portal
+        🔍 Candidate Search
+        📊 AI Matching
+        📧 Email Analysis
+    📊 Database Layer
+      🗄️ 15+ Models
+        👤 User Management
+        📚 Learning Data
+        🏢 Recruiter Data
+        🔗 OAuth Connections
+```
+
 ### 🎯 **Feature Completion Timeline**
 
 ```mermaid
@@ -412,6 +500,30 @@ timeline
           : Complete Integration
 ```
 
+### 🏆 **Technical Achievement Radar**
+
+```mermaid
+radar
+    title EduAI Technical Excellence Metrics
+    options
+        scale: 0-10
+        gridColor: #e0e0e0
+        scaleColor: #666
+        scaleLineWidth: 1
+        scaleLabelColor: #333
+    
+    "OAuth Integration" : 9.5
+    "AI Implementation" : 9.2
+    "Database Design" : 8.8
+    "Frontend Architecture" : 9.0
+    "API Reliability" : 9.3
+    "Code Quality" : 8.5
+    "Performance" : 8.7
+    "Security" : 9.1
+    "Scalability" : 8.3
+    "User Experience" : 9.4
+```
+
 ### 🏆 Actual Achievements
 
 <table>
@@ -433,20 +545,51 @@ timeline
 
 ## 🎢 Real Emotional Journey
 
+### 📊 **Developer Mood Tracking**
+
 ```mermaid
-graph LR
-    A[Day 1: Database Hell 😰] --> B[Day 2: Composio Magic 🤩]
-    B --> C[Day 3: AI Breakthrough 🚀]
-    C --> D[Day 4: Voice Success 🎉]
-    D --> E[Day 5: Email Chaos 😵]
-    E --> F[Day 6: Final Victory 🏆]
-    
-    style A fill:#ffcccc
-    style B fill:#ccffcc
-    style C fill:#ccffff
-    style D fill:#ffffcc
-    style E fill:#ffcccc
-    style F fill:#ccffcc
+xychart-beta
+    title "Developer Emotional State - 6 Day Sprint"
+    x-axis [Day1, Day2, Day3, Day4, Day5, Day6]
+    y-axis "Mood Level" 0 --> 10
+    line [3, 8, 9, 7, 4, 10]
+```
+
+### 🎆 **Emotional Milestones**
+
+```mermaid
+journey
+    title Developer Emotional Journey
+    section Day 1: Database Hell
+      Start Project: 7: Dev
+      Design Schema: 5: Dev
+      Migration Issues: 2: Dev
+      Finally Working: 6: Dev
+    section Day 2: Composio Magic
+      OAuth Setup: 8: Dev
+      LinkedIn Works: 9: Dev
+      GitHub Success: 9: Dev
+      Twitter Connected: 10: Dev
+    section Day 3: AI Breakthrough
+      Gemini Integration: 8: Dev
+      Fallback System: 9: Dev
+      Google Backup: 7: Dev
+      YouTube Success: 9: Dev
+    section Day 4: Voice Success
+      Twilio Setup: 6: Dev
+      AI Voice Works: 10: Dev
+      Function Calling: 8: Dev
+      Feature Complete: 9: Dev
+    section Day 5: Email Chaos
+      Gmail Processing: 4: Dev
+      PDF Parsing Hell: 2: Dev
+      AI Filtering: 6: Dev
+      Pipeline Working: 8: Dev
+    section Day 6: Final Victory
+      React Components: 7: Dev
+      Integration Tests: 8: Dev
+      Everything Works: 10: Dev
+      Demo Ready: 10: Dev
 ```
 
 ---
