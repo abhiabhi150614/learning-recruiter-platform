@@ -1,6 +1,6 @@
 # EduAI: Revolutionary Multi-Modal Agentic AI Learning Platform
 
-> **Hackathon Prize-Winner** | World's First Multi-Modal Agentic AI Learning Ecosystem
+
 
 ---
 
