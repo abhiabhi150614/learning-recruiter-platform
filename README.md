@@ -16,31 +16,219 @@
 ## Platform Overview
 
 ```mermaid
-graph TB
-    A[EduAI Platform] --> B[Student Portal]
-    A --> C[Recruiter Portal]
-    
-    B --> D[AI Learning Plans]
-    B --> E[Interactive Chatbot]
-    B --> F[Quiz System]
-    B --> G[Voice Tutoring]
-    B --> H[Social Integration]
-    
-    C --> I[Candidate Matching]
-    C --> J[Email Analysis]
-    C --> K[Interview Management]
-    C --> L[AI Assistant]
-    
-    D --> M[Progress Analytics]
-    E --> N[Gemini AI]
-    F --> O[Gmail Notifications]
-    G --> P[Twilio Voice]
-    H --> Q[LinkedIn/GitHub/Twitter]
-    
-    I --> R[AI Scoring]
-    J --> S[Resume Parsing]
-    K --> T[Google Meet]
-    L --> U[Recruitment Insights]
+%%{init: {'theme':'dark', 'themeVariables': {
+  'primaryColor':'#00C2A8',
+  'secondaryColor':'#4CC9F0',
+  'tertiaryColor':'#FF6B6B',
+  'accentColor':'#9C27B0',
+  'textColor':'#FFFFFF',
+  'lineColor':'#00eaff',
+  'fontSize':'14px'
+}}}%%
+
+flowchart LR
+  %% =================== PRIMARY / FAILOVER MODEL LAYER ===================
+  subgraph "🚦 Model Selection & Failover" 
+    style ModelSelection fill:#0b1220,stroke:#09303a
+    OPENAI[🟣 **OpenAI API (Primary)**\nFunction-calling • Reasoning]:::svc
+    OPENAI_FAIL{{❗ OpenAI Failure?}}:::warn
+    GEMINI[🟢 **Gemini 2.0 Flash (Fallback)**\nGemini 1.5 / 1.5 Pro / Pro]:::model
+    OPENAI -->|OK → response| CORE["✨ EDUAI AI Intelligence Hub"]:::core
+    OPENAI -.->|Error → fallback| OPENAI_FAIL
+    OPENAI_FAIL --> GEMINI
+    GEMINI --> CORE
+  end
+
+  %% =================== CORE HUB ===================
+  CORE:::core
+
+  %% =================== AGENT GROUPS ===================
+  subgraph "📚 Learning Agents"
+    CHAT_AI[💬 AI Chat Agent\nContext, Tool-calling, Memory]:::agent
+    LEARN_AI[🧠 AI Learning Agent\nPlan generation (12-36 mo)]:::agent
+    SUBPLAN_AI[🗂️ AI Subplan Agent\nGenerate 30-day months]:::agent
+    QUIZ_AI[❓ AI Quiz Agent\n15 MCQs, Regeneration]:::agent
+    NOTES_AI[📒 AI Notes Agent\nAuto Drive notes]:::agent
+    DAILY_AI[⏳ AI Daily Routine Agent\nUnlock / Reminders]:::agent
+    ANALYTICS_AI[📊 AI Progress Analyzer\nPerformance insights]:::agent
+  end
+
+  subgraph "📞 Voice & Call Agents"
+    VOICE_AI[🎙️ AI Voice Agent\nTwilio + STT/TTS + Context]:::agent
+    CALL_AI[📞 AI Call Agent\nAutomated Calls / Call Flows]:::agent
+  end
+
+  subgraph "📺 YouTube & Media AI"
+    YT_AI[🎞️ AI YouTube Agent\nSearch • Playlist • Schedule]:::agent
+    YT_ANALYZER[🔎 AI Video Analyzer\nRelevance / Transcripts]:::agent
+  end
+
+  subgraph "💼 Recruiter / Hiring AI"
+    MATCH_AI[🎯 AI Matching Agent\nVector search • Scoring]:::agent
+    RESUME_AI[📄 AI Resume Parser\nPDF/DOCX → structured]:::agent
+    SKILL_AI[🔍 AI Skill Extractor\n500+ skills NLP]:::agent
+    JOB_AI[📝 AI Job Analysis Agent\nJD → requirements]:::agent
+    RANK_AI[🏷️ AI Resume Ranking Agent\nPriority scores]:::agent
+    INTERVIEW_AI[🎥 AI Interview Agent\nMeet + Calendar orchestration]:::agent
+    INTERVIEW_SUM[🗒️ AI Interview Summarizer]:::agent
+  end
+
+  subgraph "🌐 Social & Automation AI"
+    LI_AI[🔗 AI LinkedIn Poster\nAuto posts & hashtags]:::agent
+    TW_AI[🐦 AI Twitter Fetch & Analyze\nMonitor & insights]:::agent
+    GH_AI[🐙 AI GitHub Automation\nRepo create • commits]:::agent
+  end
+
+  subgraph "🧠 Platform Intelligence & Workers"
+    CONTEXT_AI[🧩 AI Context Engine\nUser position + session]:::agent
+    PLANNER_AI[📆 AI Planning Agent\nLong-term → daily plans]:::agent
+    WORKER_AI[🤖 AI Worker Agents\nBackground tasks & regen]:::agent
+    DATA_AI[📈 AI Data Intelligence\nEmbeddings • Analytics]:::agent
+  end
+
+  %% =================== TOOLS / FUNCTION LAYER ===================
+  subgraph "🧩 AI Function Tools (callable)"
+    T_NOTES[📁 Drive Notes Tool]:::tool
+    T_DAY[📘 Day Detail Tool]:::tool
+    T_YT_SEARCH[🔍 YouTube Search Tool]:::tool
+    T_YT_PL[🎞️ Playlist Tool]:::tool
+    T_CALL_TOOL[📲 Call Initiator Tool]:::tool
+    T_POST_TOOL[✍️ LinkedIn Post Tool]:::tool
+    T_GH_TOOL[🔧 GitHub Tool]:::tool
+    T_CONTEXT_TOOL[🧠 Context Query Tool]:::tool
+    T_EMAIL_TOOL[📧 Gmail Tool]:::tool
+    T_CAL_TOOL[📅 Calendar Tool]:::tool
+    T_MEET_TOOL[🎥 Meet Tool]:::tool
+    T_VECTOR_TOOL[🔬 Embedding & Vector Tool]:::tool
+  end
+
+  %% =================== COMPOSIO INTEGRATIONS ===================
+  subgraph "🔐 Composio AI Integrations (Unified API)"
+    COMP_GMAIL[📧 Gmail (Composio)]:::svc
+    COMP_DRIVE[📁 Drive (Composio)]:::svc
+    COMP_CAL[🗓️ Calendar (Composio)]:::svc
+    COMP_YT[📺 YouTube (Composio)]:::svc
+    COMP_MEET[🎥 Meet (Composio)]:::svc
+    COMP_LINKEDIN[🔗 LinkedIn (Composio)]:::svc
+    COMP_GH[🐙 GitHub (Composio)]:::svc
+    COMP_TW[🐦 Twitter (Composio)]:::svc
+  end
+
+  %% =================== GOOGLE NATIVE APIS ===================
+  subgraph "🌐 Google Native APIs"
+    GMAIL_API[📧 Gmail API]:::svc
+    DRIVE_API[📁 Drive API]:::svc
+    CAL_API[📅 Calendar API]:::svc
+    YT_API[📺 YouTube Data API]:::svc
+    MEET_API[🎥 Google Meet API]:::svc
+    CONTACTS_API[👥 Contacts API (optional)]:::svc
+  end
+
+  %% =================== CONNECTIONS: CORE ↔ AGENTS ↔ TOOLS ↔ SERVICES ===================
+  CORE -->|manages/dispatches| CHAT_AI
+  CORE --> LEARN_AI
+  CORE --> SUBPLAN_AI
+  CORE --> QUIZ_AI
+  CORE --> NOTES_AI
+  CORE --> DAILY_AI
+  CORE --> ANALYTICS_AI
+  CORE --> VOICE_AI
+  CORE --> CALL_AI
+  CORE --> YT_AI
+  CORE --> YT_ANALYZER
+  CORE --> MATCH_AI
+  CORE --> RESUME_AI
+  CORE --> SKILL_AI
+  CORE --> JOB_AI
+  CORE --> RANK_AI
+  CORE --> INTERVIEW_AI
+  CORE --> INTERVIEW_SUM
+  CORE --> LI_AI
+  CORE --> TW_AI
+  CORE --> GH_AI
+  CORE --> CONTEXT_AI
+  CORE --> PLANNER_AI
+  CORE --> WORKER_AI
+  CORE --> DATA_AI
+
+  %% Agents → Tools
+  CHAT_AI --> T_NOTES
+  CHAT_AI --> T_YT_SEARCH
+  CHAT_AI --> T_CONTEXT_TOOL
+  CHAT_AI --> T_EMAIL_TOOL
+  CHAT_AI --> T_POST_TOOL
+
+  LEARN_AI --> T_DAY
+  SUBPLAN_AI --> T_DAY
+  QUIZ_AI --> T_DAY
+  NOTES_AI --> T_NOTES
+  DAILY_AI --> T_CAL_TOOL
+  ANALYTICS_AI --> T_VECTOR_TOOL
+
+  VOICE_AI --> T_CALL_TOOL
+  CALL_AI --> T_CALL_TOOL
+
+  YT_AI --> T_YT_SEARCH
+  YT_AI --> T_YT_PL
+  YT_ANALYZER --> T_YT_SEARCH
+
+  MATCH_AI --> T_VECTOR_TOOL
+  RESUME_AI --> T_EMAIL_TOOL
+  SKILL_AI --> T_EMAIL_TOOL
+  RANK_AI --> T_VECTOR_TOOL
+
+  INTERVIEW_AI --> T_CAL_TOOL
+  INTERVIEW_AI --> T_MEET_TOOL
+  INTERVIEW_SUM --> T_NOTES
+
+  LI_AI --> T_POST_TOOL
+  TW_AI --> T_EMAIL_TOOL
+  GH_AI --> T_GH_TOOL
+
+  %% Tools → Composio (primary integration path)
+  T_NOTES --> COMP_DRIVE
+  T_YT_SEARCH --> COMP_YT
+  T_YT_PL --> COMP_YT
+  T_CALL_TOOL --> COMP_MEET
+  T_EMAIL_TOOL --> COMP_GMAIL
+  T_POST_TOOL --> COMP_LINKEDIN
+  T_GH_TOOL --> COMP_GH
+  T_CAL_TOOL --> COMP_CAL
+  T_VECTOR_TOOL --> DATA_AI
+
+  %% Composio → Google Native (fallthrough / native access)
+  COMP_DRIVE --> DRIVE_API
+  COMP_GMAIL --> GMAIL_API
+  COMP_CAL --> CAL_API
+  COMP_YT --> YT_API
+  COMP_MEET --> MEET_API
+  COMP_LINKEDIN -.-> CONTACTS_API
+  COMP_GH -.-> GMAIL_API
+  COMP_TW -.-> GMAIL_API
+
+  %% =================== HIGH-LEVEL FLOWS (ANNOTATIONS) ===================
+  click OPENAI "https://openai.com" "OpenAI (primary): attempted first; on error -> Gemini fallback"
+  click GEMINI "https://developers.google.com/experimental" "Gemini fallback (used if OpenAI fails)"
+
+  %% =================== STYLES ===================
+  classDef core fill:#00C2A8,stroke:#006955,stroke-width:3px,color:#000;
+  classDef model fill:#8E44AD,stroke:#6A1B9A,stroke-width:2px,color:#fff;
+  classDef agent fill:#4CC9F0,stroke:#0A6871,stroke-width:1.5px,color:#000;
+  classDef tool fill:#FFD166,stroke:#C57A00,stroke-width:1px,color:#000;
+  classDef svc fill:#9C27B0,stroke:#6A1B9A,stroke-width:1px,color:#fff;
+  classDef warn fill:#FF6B6B,stroke:#D32F2F,stroke-width:2px,color:#fff;
+
+  %% =================== LEGEND ===================
+  subgraph Legend[ ]
+    direction LR
+    L1[✨ Core Hub]:::core
+    L2[🧩 Agents / Services]:::agent
+    L3[🛠 Tools (callable functions)]:::tool
+    L4[🔐 Composio / Google APIs]:::svc
+    L5[🧯 Fallback Notice]:::warn
+  end
+
+
 ```
 
 ### Key Achievements
